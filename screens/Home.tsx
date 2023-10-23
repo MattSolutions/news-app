@@ -5,7 +5,7 @@ import { ComponentNavigationProps, NewsData } from '../utils/types';
 import CardItem from '../components/CardItem';
 
 const categories = ["Technology", "Sports", "Politics", "Health", "Business"];
-const API_KEY = 'pub_3167452f28bb15d090613df9543aae83081fa';
+const API_KEY = 'pub_316740aaa6eee09a8655bd507c8abf66e5037';
 
 const Home = (props: ComponentNavigationProps) => {
   const [newsData, setNewsData] = useState<NewsData[]>([]);
