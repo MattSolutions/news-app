@@ -9,10 +9,8 @@
 
 ### Screenshots
 <p float="left">
-  ![Simulator Screenshot - iPhone 15 Pro - 2023-10-24 at 13 00 21](https://github.com/MattSolutions/news-app/assets/107211461/86a8e073-4f77-4e80-a272-605ab4c76875)
-  
+  <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/107211461/277727771-86a8e073-4f77-4e80-a272-605ab4c76875.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20231024%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231024T160937Z&X-Amz-Expires=300&X-Amz-Signature=c693ab2f1d34faa91b0364c0bb780fb9cac1152f178ab439169acedc173bf07c&X-Amz-SignedHeaders=host&actor_id=107211461&key_id=0&repo_id=709056113" alt="Logo" width="250" >
   <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/107211461/277728191-11c8f0b4-c394-47fd-8ed2-60ced38bc602.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20231024%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231024T160602Z&X-Amz-Expires=300&X-Amz-Signature=3296f0a52e6afde934ccd36a0b9e8eff11285c2dfa406c8062921e002b0178f0&X-Amz-SignedHeaders=host&actor_id=107211461&key_id=0&repo_id=709056113" alt="NewsApp" width="250" >
-  <img src="![Simulator Screenshot - iPhone 15 Pro - 2023-10-24 at 13 00 33](https://github.com/MattSolutions/news-app/assets/107211461/11c8f0b4-c394-47fd-8ed2-60ced38bc602)" alt="Logo" width="250" >
   <img src="screenshots/screen-3.png" alt="Logo" width="250" >
 </p>
 
