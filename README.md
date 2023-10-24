@@ -25,7 +25,8 @@ Other technologies used in the project:
 *   OpenWeather API
 *   NewsData API
 *   React Navigation
-*   React Native Paper 
+*   React Native Paper
+*   React Native Async Storage
 </p>
 
 
