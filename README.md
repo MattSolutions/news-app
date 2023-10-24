@@ -15,17 +15,17 @@
   <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/107211461/277732903-618eb34c-92a2-4fda-9cf5-014615dfc94e.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20231024%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231024T161428Z&X-Amz-Expires=300&X-Amz-Signature=7d5b420888f477134f3ea712b5231a0a0affeb88c9b0028d26c918335fd15b28&X-Amz-SignedHeaders=host&actor_id=107211461&key_id=0&repo_id=709056113" alt="Logo" width="250" >
 </p>
 
-### Built With
+### Built With 💻
 <p>
 <img src="https://img.shields.io/badge/React Native-282C34?logo=react&logoColor=61DAFB" alt="React Native logo" title="React Native" height="25" />
 <img src="https://img.shields.io/badge/TypeScript-282C34?logo=typescript&logoColor=3178C6" alt="TypeScript logo" title="TypeScript" height="25" />
-  
+
 Other technologies used in the project:
-Expo
-NewsData API
-OpenWeather API
-React Navigation
-React Native Paper 
+*   Expo
+*   OpenWeather API
+*   NewsData API
+*   React Navigation
+*   React Native Paper 
 </p>
 
 
