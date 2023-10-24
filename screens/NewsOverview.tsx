@@ -4,7 +4,7 @@ import { ComponentNavigationProps, NewsData } from '../utils/types';
 import DetailsCard from '../components/DetailsCard';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useRoute } from '@react-navigation/native';
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons'; // Import the icon
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons'; 
 
 const getData = async () => {
   try {
@@ -47,7 +47,7 @@ const NewsOverview = (props: ComponentNavigationProps) => {
         <Icon
           name={isSaved ? 'heart' : 'heart-outline'}
           size={30}
-          color="red" // Set the color to red
+          color="red" 
           onPress={() => {
             storeData({ title, content, image_url });
             setSaved(!isSaved);

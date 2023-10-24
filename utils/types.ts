@@ -1,9 +1,10 @@
-import { RouteProp, NavigationProp, Route} from '@react-navigation/native';
+import { NavigationProp } from '@react-navigation/native';
 
 
 
 
 export type NewsData = {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     publishedAt: any;
     title: string;
     link: string;
@@ -22,6 +23,8 @@ export type NewsData = {
 };
 
 export type ComponentNavigationProps = {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     navigation: NavigationProp<any, 'News Overview'>; 
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     route: NavigationProp<any, 'News Overview'>;
 };

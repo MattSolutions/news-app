@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { FlatList, StyleSheet, Text, View } from 'react-native';
-import { Appbar } from 'react-native-paper'; // Removed unused imports
+import { FlatList, StyleSheet, View } from 'react-native';
+import { Appbar } from 'react-native-paper'; 
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useIsFocused } from '@react-navigation/native';
 import { ComponentNavigationProps, NewsData } from '../utils/types';
@@ -27,7 +27,7 @@ const Saved = (props: ComponentNavigationProps) => {
   useEffect(() => {
     getData()
       .then((data) => setSavedNews(data))
-      .catch((err) => alert('Error Occurred'));
+      .catch(() => alert('Error Occurred'));
   }, [focused]);
 
   const deleteHandler = async (title: string) => {
@@ -40,7 +40,6 @@ const Saved = (props: ComponentNavigationProps) => {
       await AsyncStorage.setItem('@newsData', JSON.stringify(updatedSavedNews));
     } catch (error) {
       console.error('Error deleting saved item:', error);
-      // You may want to show an error message here
     }
   };
 

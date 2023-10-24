@@ -1,28 +1,35 @@
 import React, { useEffect, useState } from 'react';
-import { StyleSheet, Text, View, FlatList, Image } from 'react-native';
+import { StyleSheet, Text, View, FlatList } from 'react-native';
 import { Appbar, Chip, Button, ProgressBar, MD3Colors } from 'react-native-paper';
 import { ComponentNavigationProps, NewsData } from '../utils/types';
 import CardItem from '../components/CardItem';
-import Icon from 'react-native-vector-icons/FontAwesome'; // Change to your preferred icon library
+import Icon from 'react-native-vector-icons/FontAwesome'; 
+
+import { NEWS_API_KEY, WEATHER_API_KEY } from '../config'; // Import API keys
 
 const categories = ["Technology", "Sports", "Politics", "Health", "Business"];
-const API_KEY = 'pub_316740aaa6eee09a8655bd507c8abf66e5037';
 const placeholderImage = 'https://pioneer-technical.com/wp-content/uploads/2016/12/news-placeholder.png';
 
-const weatherApiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Buenos%20Aires,AR&units=metric&appid=c4a6cfa4d637dc8684b0295b4d20e5f9`;
+type WeatherData = {
+  main: {
+    temp: number;
+  };
+};
+
+const weatherApiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Buenos%20Aires,AR&units=metric&appid=${WEATHER_API_KEY}`;
 
 const Home = (props: ComponentNavigationProps) => {
   const [newsData, setNewsData] = useState<NewsData[]>([]);
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
   const [isLoading, setIsLoading] = useState(false);
   const [nextPage, setNextPage] = useState("");
-  const [weather, setWeather] = useState<any>(null);
+  const [weather, setWeather] = useState<WeatherData | null>(null);
 
   useEffect(() => {
     fetchWeatherData()
       .then((data) => {
         if (data.cod === 200 && data.main && data.main.temp) {
-          setWeather(data);
+          setWeather(data as WeatherData);
         } else {
           console.error('Invalid weather data:', data);
         }
@@ -31,6 +38,7 @@ const Home = (props: ComponentNavigationProps) => {
   }, []);
   
   const fetchWeatherData = async () => {
+    // eslint-disable-next-line no-useless-catch
     try {
       const response = await fetch(weatherApiUrl);
       const data = await response.json();
@@ -39,7 +47,7 @@ const Home = (props: ComponentNavigationProps) => {
       throw error;
     }
   };
-  
+
   const handleSelect = (val: string) => {
     setSelectedCategories((prev) =>
       prev.includes(val) ? prev.filter((cat) => cat !== val) : [...prev, val]
@@ -47,7 +55,7 @@ const Home = (props: ComponentNavigationProps) => {
   };
 
   const handlePress = async () => {
-    const URL = `https://newsdata.io/api/1/news?apikey=${API_KEY}&country=us&language=en&${
+    const URL = `https://newsdata.io/api/1/news?apikey=${NEWS_API_KEY}&country=us&language=en&${
       selectedCategories.length > 0 ? `category=${selectedCategories.join(',')}` : ''
     }${nextPage?.length > 0 ? `&page=${nextPage}` : ""} `;
     try {
@@ -133,7 +141,7 @@ const styles = StyleSheet.create({
   },
   titleStyle: {
     color: 'black',
-    marginLeft: 60, // Adjust the left margin as needed
+    marginLeft: 60, 
   },
   weatherContainer: {
     flexDirection: 'row',

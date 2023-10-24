@@ -1,16 +1,17 @@
-import { Pressable, StyleSheet } from 'react-native';
+import { Pressable } from 'react-native';
 import React from 'react';
-import { Button, Card, useTheme, IconButton } from 'react-native-paper';
-import { RouteProp, NavigationProp } from '@react-navigation/native';
+import { Card, useTheme, IconButton } from 'react-native-paper';
+import { NavigationProp } from '@react-navigation/native';
 
 type Props = {
   title: string;
   image_url: string;
   description: string;
   content: string;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   navigation: NavigationProp<any, 'News Overview'>;
   handleDelete?: (val: string) => void;
-  placeholderImage: string; // New prop for the placeholder image URL
+  placeholderImage: string; 
 };
 
 const CardItem = (props: Props) => {
@@ -30,7 +31,7 @@ const CardItem = (props: Props) => {
       <Card style={{ marginVertical: 10, backgroundColor: theme.colors.elevation.level5 }}>
         <Card.Cover
           borderRadius={10}
-          source={{ uri: props.image_url || props.placeholderImage }} // Use placeholderImage as a fallback
+          source={{ uri: props.image_url || props.placeholderImage }} 
           onError={(error) => console.log('Image Error:', error.nativeEvent.error)}
         />
 
@@ -53,5 +54,3 @@ const CardItem = (props: Props) => {
 };
 
 export default CardItem;
-
-const styles = StyleSheet.create({});
