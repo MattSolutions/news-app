@@ -47,7 +47,11 @@ Other technologies used in the project:
 4. Install Expo CLI
 
    ```sh
-   npm i -g expo-cli
+   npm i -g expo-cli 
+   ```
+   or 
+      ```sh
+   npm install
    ```
 5. Go to the 'config.js' file and insert
 
