@@ -38,8 +38,8 @@
 
 ### Installation
 
-1. Get a free API Key at [https://newsapi.org/](https://newsdata.io/)
-2. Get a free API Key at [https://newsapi.org/](https://home.openweathermap.org/users/sign_up)
+1. Get a free API Key at [https://newsdata.io/](https://newsdata.io/)
+2. Get a free API Key at [https://home.openweathermap.org/users/sign_up](https://home.openweathermap.org/users/sign_up)
 
 
 3. Clone the repo
