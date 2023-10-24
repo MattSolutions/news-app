@@ -9,13 +9,10 @@
 
 ### Screenshots
 <p float="left">
-  <img src="screenshots/screen-1.png" alt="Logo" width="250" >
-  <img src="screenshots/screen-2.png" alt="Logo" width="250" >
+  <img src="![Simulator Screenshot - iPhone 15 Pro - 2023-10-24 at 13 00 21](https://github.com/MattSolutions/news-app/assets/107211461/86a8e073-4f77-4e80-a272-605ab4c76875)" alt="NewsApp" width="250" >
+  <img src="![Simulator Screenshot - iPhone 15 Pro - 2023-10-24 at 13 00 33](https://github.com/MattSolutions/news-app/assets/107211461/11c8f0b4-c394-47fd-8ed2-60ced38bc602)" alt="Logo" width="250" >
   <img src="screenshots/screen-3.png" alt="Logo" width="250" >
-  <img src="screenshots/screen-4.png" alt="Logo" width="250" >
-  <img src="screenshots/screen-5.png" alt="Logo" width="250" >
-  <img src="screenshots/screen-6.png" alt="Logo" width="250" >
-  <img src="screenshots/screen-7.png" alt="Logo" width="250" >
+
 </p>
 
 ### Built With
