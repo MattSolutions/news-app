@@ -38,7 +38,7 @@
 
 ### Installation
 
-1. Get a free API Key at [https://newsapi.org/]((https://newsdata.io/))
+1. Get a free API Key at [https://newsapi.org/](https://newsdata.io/)
 2. Get a free API Key at [https://newsapi.org/](https://home.openweathermap.org/users/sign_up)
 
 
