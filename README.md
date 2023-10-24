@@ -28,29 +28,21 @@
 <!-- GETTING STARTED -->
 ## Getting Started
 
-### Prerequisites
-
-* npm
-
-  ```sh
-  npm install -g yarn
-  ```
-
 ### Installation
 
 1. Get a free API Key at [https://newsdata.io/](https://newsdata.io/)
 2. Get a free API Key at [https://home.openweathermap.org/users/sign_up](https://home.openweathermap.org/users/sign_up)
 
 
-3. Clone the repo
+3. Clone the repo and open it in VS CODE. 
 
    ```sh
    git clone https://github.com/MattSolutions/news-app.git
    ```
-4. Install YARN packages
+4. Install Expo CLI
 
    ```sh
-   yarn
+   npm i -g expo-cli
    ```
 5. Go to the 'config.js' file and insert
 
@@ -62,8 +54,7 @@
 6. Start the application
 
    ```js
-   expo start
+   expo start or npm start
    ```
-
 <!-- LICENSE -->
 ## Made by Mati Battiti. 
