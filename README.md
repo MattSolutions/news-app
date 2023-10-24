@@ -1,7 +1,5 @@
 # Matt News App
 
-<h3 align="center">MATT NEWS APP</h3>
-
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
@@ -40,7 +38,7 @@
 
 ### Installation
 
-1. Get a free API Key at [https://newsapi.org/](https://newsapi.org/](https://newsdata.io/))
+1. Get a free API Key at [https://newsapi.org/]((https://newsdata.io/))
 2. Get a free API Key at [https://newsapi.org/](https://home.openweathermap.org/users/sign_up)
 
 
