@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from 'react';
-import { StyleSheet, Text, View, FlatList } from 'react-native';
+import { StyleSheet, Text, View, FlatList, Image } from 'react-native';
 import { Appbar, Chip, Button, ProgressBar, MD3Colors } from 'react-native-paper';
 import { ComponentNavigationProps, NewsData } from '../utils/types';
 import CardItem from '../components/CardItem';
 
 const categories = ["Technology", "Sports", "Politics", "Health", "Business"];
 const API_KEY = 'pub_316740aaa6eee09a8655bd507c8abf66e5037';
+
+const placeholderImage = 'https://pioneer-technical.com/wp-content/uploads/2016/12/news-placeholder.png'; // Replace with your actual placeholder image URL
 
 const Home = (props: ComponentNavigationProps) => {
   const [newsData, setNewsData] = useState<NewsData[]>([]);
@@ -32,7 +34,7 @@ const Home = (props: ComponentNavigationProps) => {
         setNewsData((prev) => [...prev, ...data.results]);
         setNextPage(data.nextPage);
       } else {
-        // Handle the case where data.results is not an array
+        // Handle other unexpected cases
         console.error("Invalid data received:", data);
       }
       setIsLoading(false);
@@ -40,11 +42,13 @@ const Home = (props: ComponentNavigationProps) => {
       console.error("API Request Error:", err);
     }
   };
-  
+
   return (
     <View style={styles.container}>
-      <Appbar.Header>
-        <Appbar.Content title="News Feed" />
+      <Appbar.Header
+        style={styles.appBarStyle} // Add custom style to the AppBar
+      >
+        <Appbar.Content title="Matt News" titleStyle={styles.titleStyle} />
       </Appbar.Header>
       <View style={styles.filtersContainer}>
         {categories.map((cat) => (
@@ -70,7 +74,7 @@ const Home = (props: ComponentNavigationProps) => {
       </View>
       <ProgressBar visible={isLoading} indeterminate color={MD3Colors.error50} />
       <FlatList
-        keyExtractor={(item) => item.title}
+        keyExtractor={(item) => `${item.title}-${item.publishedAt}`} // Create a unique composite key
         onEndReached={() => handlePress()}
         style={styles.flatList}
         data={newsData}
@@ -82,6 +86,7 @@ const Home = (props: ComponentNavigationProps) => {
             image_url={item.image_url}
             title={item.title}
             content={item.content}
+            placeholderImage={placeholderImage} // Pass the placeholder image
           />
         )}
       />
@@ -89,11 +94,15 @@ const Home = (props: ComponentNavigationProps) => {
   );
 };
 
-export default Home;
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+  },
+  appBarStyle: {
+    backgroundColor: 'f9f7f4', // Light gray background color
+  },
+  titleStyle: {
+    color: 'black', // Black title text color
   },
   filtersContainer: {
     flexDirection: "row",
@@ -114,3 +123,5 @@ const styles = StyleSheet.create({
     height: "auto",
   },
 });
+
+export default Home;

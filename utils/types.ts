@@ -4,6 +4,7 @@ import { RouteProp, NavigationProp, Route} from '@react-navigation/native';
 
 
 export type NewsData = {
+    publishedAt: any;
     title: string;
     link: string;
     keywords: string[];
@@ -17,9 +18,10 @@ export type NewsData = {
     category: string[];
     country: string;
     language: string;
+    placeholder: string;
 };
 
 export type ComponentNavigationProps = {
-    navigation: NavigationProp<any, 'News Overview'>; // Use the route name here
+    navigation: NavigationProp<any, 'News Overview'>; 
     route: NavigationProp<any, 'News Overview'>;
 };

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { FlatList, StyleSheet, Text, View } from 'react-native';
-import { Appbar, Button } from 'react-native-paper';
+import { Appbar } from 'react-native-paper'; // Removed unused imports
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useIsFocused } from '@react-navigation/native';
 import { ComponentNavigationProps, NewsData } from '../utils/types';
@@ -46,8 +46,9 @@ const Saved = (props: ComponentNavigationProps) => {
 
   return (
     <View style={styles.container}>
-      <Appbar.Header>
-        <Appbar.Content title="Saved" />
+      <Appbar.Header
+        style={styles.appBarStyle}>
+        <Appbar.Content title="Saved" titleStyle={styles.titleStyle} />
       </Appbar.Header>
       <FlatList
         keyExtractor={(item) => item.title}
@@ -62,6 +63,7 @@ const Saved = (props: ComponentNavigationProps) => {
             image_url={item.image_url}
             title={item.title}
             content={item.content}
+            placeholderImage={'https://pioneer-technical.com/wp-content/uploads/2016/12/news-placeholder.png'} // You can use your own placeholder image
           />
         )}
       />
@@ -69,11 +71,15 @@ const Saved = (props: ComponentNavigationProps) => {
   );
 };
 
-export default Saved;
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+  },
+  appBarStyle: {
+    backgroundColor: '#f9f7f4',
+  },
+  titleStyle: {
+    color: 'black', 
   },
   flatList: {
     display: 'flex',
@@ -81,3 +87,5 @@ const styles = StyleSheet.create({
     height: 'auto',
   },
 });
+
+export default Saved;
