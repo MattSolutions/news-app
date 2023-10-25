@@ -10,7 +10,7 @@
 
 ### Screenshots
 <p style="float: left;">
-  <img src="https://i.ibb.co/gRQQ0Qn/Simulator-Screenshot-i-Phone-15-Pro-2023-10-25-at-15-35-44.png" alt="NewsApp" width="250" >
+  <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/107211461/278113318-9ff3c3c6-bebc-4d92-b211-e9781a18a9b0.png" alt="NewsApp" width="250" >
   <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/107211461/277728191-11c8f0b4-c394-47fd-8ed2-60ced38bc602.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20231024%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231024T160602Z&X-Amz-Expires=300&X-Amz-Signature=3296f0a52e6afde934ccd36a0b9e8eff11285c2dfa406c8062921e002b0178f0&X-Amz-SignedHeaders=host&actor_id=107211461&key_id=0&repo_id=709056113" alt="NewsApp" width="250" >
   <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/107211461/277732903-618eb34c-92a2-4fda-9cf5-014615dfc94e.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20231024%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231024T161428Z&X-Amz-Expires=300&X-Amz-Signature=7d5b420888f477134f3ea712b5231a0a0affeb88c9b0028d26c918335fd15b28&X-Amz-SignedHeaders=host&actor_id=107211461&key_id=0&repo_id=709056113" alt="Logo" width="250" >
 </p>
