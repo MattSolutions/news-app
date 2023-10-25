@@ -9,11 +9,11 @@
 <p> Weather status to know the current weather when reading your favorite news!</p>
 
 ### Screenshots
-<div style="display: flex; padding: 10;">
+<p float="left" padding: 10px;>
   <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/107211461/277727771-86a8e073-4f77-4e80-a272-605ab4c76875.png" alt="Logo" width="250">
   <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/107211461/277728191-11c8f0b4-c394-47fd-8ed2-60ced38bc602.png" alt="NewsApp" width="250">
   <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/107211461/277732903-618eb34c-92a2-4fda-9cf5-014615dfc94e.png" alt="Logo" width="250">
-</div>
+</p>
 
 ### Built With 💻
 <p>
