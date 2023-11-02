@@ -62,7 +62,7 @@ const Saved = (props: ComponentNavigationProps) => {
             image_url={item.image_url}
             title={item.title}
             content={item.content}
-            placeholderImage={'https://pioneer-technical.com/wp-content/uploads/2016/12/news-placeholder.png'} // You can use your own placeholder image
+            placeholderImage={'https://pioneer-technical.com/wp-content/uploads/2016/12/news-placeholder.png'} 
           />
         )}
       />
